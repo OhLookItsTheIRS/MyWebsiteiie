@@ -1,4 +1,100 @@
 /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav {
+    margin-top: 1em;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f9d342;
+}
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    margin: 2em 0 1em;
+    font-size: 2rem;
+    color: #444;
+}
+
+/* Coming Soon Sections */
+.coming-soon {
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    padding: 2em;
+    margin: 1em auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.coming-soon:hover {
+    transform: scale(1.05);
+}
+
+.animated-text {
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 600;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Fun Section */
+#fun {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.fun-button {
+    padding: 10px 20px;
+    background-color: #f9d342;
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fun-button:hover {
+    background-color: #e8c23a;
+    transform: scale(1.1);
+}
+
+/* Animal Section */
 .animal-container {
     text-align: center;
     margin: 2em auto;
@@ -32,4 +128,13 @@ button:hover {
     border: 5px solid #f9d342;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(249, 211, 66, 0.7);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
 }
